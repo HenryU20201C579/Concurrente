@@ -1,0 +1,148 @@
+### ARBOLES ### ----------------------------------------------------------------
+
+└─ 💬 go run .\Arbol_Secuencial.go
+Dataset creado con éxito!
+Árbol de Decisión entrenado: Nodo(izquierda=Nodo(izquierda=Nodo(izquierda=Hoja, derecha=Hoja), derecha=Hoja), derecha=Nodo(izquierda=Hoja, derecha=Nodo(izquierda=Hoja, derecha=Hoja)))
+Tiempo total de ejecución: 84.7908ms
+
+└─ 💬 go run .\Arbol_Concurrente.go
+Creando dataset...
+Dataset creado con éxito!
+Entrenando modelo 4...
+Entrenando modelo 2...
+Entrenando modelo 3...
+Entrenando modelo 1...
+Modelo 3 entrenado en 271.7974ms
+Modelo 2 entrenado en 274.3065ms
+Modelo 4 entrenado en 310.7356ms
+Modelo 1 entrenado en 339.3726ms
+Entrenamiento completado en 339.6393ms
+
+
+### RANDOMFORESTS ### ----------------------------------------------------------------
+
+└─ 💬 go run .\RandomForests_Secuencial.go
+Creando dataset con 1000 ejemplos y 10 características...
+Dataset creado con éxito.
+Dataset dividido en entrenamiento (80.00%) y prueba (20.00%).
+Entrenamiento completado.
+Precisión del modelo: 51.50%
+Tiempo de ejecución: 0s
+
+└─ 💬 go run .\RandomForests_Concurrente.go
+Creando dataset con 1000 ejemplos y 10 características...
+Dataset creado con éxito.
+Dataset dividido en entrenamiento (80.00%) y prueba (20.00%).
+Entrenamiento de 10 árboles completado.
+Precisión del modelo: 44.00%
+Tiempo de ejecución: 0s
+
+
+### SVM ### ----------------------------------------------------------------
+
+└─ 💬 go run .\SVM_Secuencial.go
+Creando dataset de 1000000 registros...
+Dataset creado con éxito.
+Entrenando el modelo SVM secuencialmente...
+Entrenamiento completado.
+Pesos finales: [-0.0006937359242122946 0.005835684749479599 0.003244869628088839 0.012928161143661032]
+Tiempo de ejecución: 132.9711ms
+
+└─ 💬 go run .\SVM_Concurrente.go
+Creando dataset de 1000000 registros...
+Dataset creado con éxito.
+Entrenando el modelo SVM concurrentemente...
+Entrenamiento completado.
+Pesos finales: [0.005081480603800172 -0.00012495429997102982 -0.007170430975083707 0.006152125988973676]
+Tiempo de ejecución: 270.7597ms
+
+
+### REDES NEURONALES ### ----------------------------------------------------------------
+
+└─ 💬 go run .\RedesNeuronales_Secuencial.go
+Creando dataset de 1000000 registros...
+Dataset creado con éxito.
+Entrenando la red neuronal secuencialmente...
+Entrenamiento completado.
+Tiempo de ejecución: 2.0055768s
+
+└─ 💬 go run .\RedesNeuronales_Concurrente.go
+Creando dataset de 1000000 registros...
+Dataset creado con éxito.
+Entrenando la red neuronal concurrentemente...
+Entrenamiento completado.
+Tiempo de ejecución: 2.5305626s
+
+
+### DEEP LEARNING ### ----------------------------------------------------------------
+
+└─ 💬 go run .\DL_Secuencial.go
+Creando dataset con 1000 ejemplos y 10 características...
+Dataset creado con éxito.
+Dataset dividido en entrenamiento (80.00%) y prueba (20.00%).
+Red neuronal inicializada.
+Entrenamiento completado.
+Precisión del modelo: 46.50%
+Tiempo de ejecución: 12.1253ms
+
+└─ 💬 go run .\DL_Concurrente.go
+Creando dataset con 1000 ejemplos y 10 características...
+Dataset creado con éxito.
+Dataset dividido en 800 ejemplos de entrenamiento y 200 ejemplos de prueba.
+Entrenamiento completado.
+Precisión del modelo: 48.50%
+Tiempo de ejecución: 2.0929ms
+
+
+### FILTRADO COLABORATIVO ### ----------------------------------------------------------------
+
+└─ 💬 go run .\FiltradoColaborativo_Secuencial.go
+Creando dataset con 1000 usuarios y 100 productos...
+Dataset creado con éxito.
+Usuario 0 predice una calificación de 2.64 para el producto 5
+Usuario 1 predice una calificación de 2.55 para el producto 5
+Usuario 2 predice una calificación de 2.76 para el producto 5
+Usuario 3 predice una calificación de 2.34 para el producto 5
+Usuario 4 predice una calificación de 2.62 para el producto 5
+Usuario 5 predice una calificación de 2.35 para el producto 5
+...
+Usuario 999 predice una calificación de 2.52 para el producto 5
+Predicciones completadas.
+Tiempo de ejecución: 3.1925501s
+
+
+└─ 💬 go run .\FiltradoColaborativo_Concurrente.go
+Creando dataset con 1000 usuarios y 100 productos...
+Dataset creado con éxito.
+Predicciones completadas.
+Usuario 16 predice una calificación de 2.78 para el producto 5
+Usuario 621 predice una calificación de 2.94 para el producto 5
+Usuario 808 predice una calificación de 2.42 para el producto 5
+Usuario 49 predice una calificación de 2.70 para el producto 5
+Usuario 923 predice una calificación de 2.71 para el producto 5
+Usuario 921 predice una calificación de 2.53 para el producto 5
+...
+Usuario 477 predice una calificación de 2.42 para el producto 5
+Usuario 305 predice una calificación de 2.78 para el producto 5
+Usuario 724 predice una calificación de 2.30 para el producto 5
+Tiempo de ejecución: 340.5843ms
+
+
+### MODELOS BASADOS EN FACTORES LATENTES ### ----------------------------------------------------------------
+
+└─ 💬 go run .\MBFL_Secuencial.go
+Creando dataset con 1000 ejemplos y 10 características...
+Dataset creado con éxito.
+Dataset dividido en 800 ejemplos de entrenamiento y 200 ejemplos de prueba.
+Entrenamiento completado.
+Precisión del modelo: 0.00%
+Tiempo de ejecución: 1.0442ms
+
+└─ 💬 go run .\MBFL_Concurrente.go
+Creando dataset con 1000 ejemplos y 10 características...
+Dataset creado con éxito.
+Dataset dividido en 800 ejemplos de entrenamiento y 200 ejemplos de prueba.
+Entrenamiento completado.
+Precisión del modelo: 0.00%
+Tiempo de ejecución: 4.1841ms
+
