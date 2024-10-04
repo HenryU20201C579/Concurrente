@@ -1,0 +1,21 @@
+Ejercicio 1:
+Una estudiante ingresa a una sala de lectura y tiene un número de horas para estar en la sala de lectura, el becario mientras  
+el estudiante está en la sala, este espera su turno. Cuando el estudiante sale, entonces ingresa el becario y mientras el becario esté
+en la sala el estudiante no puede volver a ingresar, el becario también tiene un nro de horas para estar en la sala.
+Desarrollar un programa en go utilizando sync.Mutex para sincronizar la labor de cada individuo, permitiendo eliminar condiciones
+de carrera.
+
+Ejercicio 2:
+
+En un salon de clase un grupo de 5 alumnos van a rendir su examen parcial, mientras no ingresen todos y terminen de dar el 
+examen todos los alumnos, no podrán ingresar 3 encargados de recoger los examenes.
+Desarrollar un programa en go utilizando sync.Mutex para simular las tareas de los estudiantes y los encargados, permitiendo eliminar
+las condiciones de carrera. Cada alumno y cada encargado son 1 proceso individual.
+
+Ejercicio 3:
+
+En un centro recreacional hay un solo baño y se ha organizado el acceso en tres grupos, uno de solo varones, uno de solo
+mujeres y uno de solo niños, se debe simular el actuar de cada grupo teniendo en cuenta que cada grupos es independiente,
+cada grupo consta de 5 individios y tienen que ingresar uno grupo a la vez.
+Desarrollar un programa en go para el caso propuesto, deberá eliminar las condiciones de carrera.
+Cada individuo es un proceso.
